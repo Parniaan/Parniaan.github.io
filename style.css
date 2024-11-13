@@ -86,6 +86,7 @@ body {
     width: 100%;
 }
 
+/* Publication image styling */
 .pub-image {
     width: 100px;
     height: auto;
@@ -93,6 +94,7 @@ body {
     border-radius: 4px;
 }
 
+/* Publication details styling */
 .pub-details p {
     margin: 5px 0;
 }
