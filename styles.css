@@ -108,6 +108,7 @@ body {
 }
 
 /* Section title styling */
+/* Section title styling */
 .section-title {
     font-size: 1.5em;
     color: #333;
@@ -115,42 +116,70 @@ body {
     font-weight: bold;
 }
 
-/* General list styling for services and experience */
-.service-list, .experience-list {
-    list-style-type: none; /* Remove default bullets */
-    padding: 0;
-    margin: 0;
-}
-
-/* List item styling */
-.service-list li, .experience-list li {
+/* Card layout for each section */
+.card {
     display: flex;
     align-items: flex-start;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
     margin-bottom: 15px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+.card-image {
+    width: 100px;
+    height: auto;
+    margin-right: 15px;
+    border-radius: 4px;
+}
+
+.card-content {
+    flex: 1;
+}
+
+/* Aligning text inside the card content */
+.card-content p {
+    margin: 5px 0;
     font-size: 1em;
     color: #444;
 }
 
+/* List styling for academic services and volunteer experience */
+.card-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.card-content ul li {
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
 /* Custom bullet styling */
-.service-list li::before, .experience-list li::before {
+.card-content ul li::before {
     content: "•"; /* Custom bullet symbol */
     color: #4A90E2; /* Custom bullet color */
     font-size: 1.2em;
-    font-weight: bold;
-    margin-right: 10px;
+    margin-right: 8px;
+    vertical-align: middle;
 }
 
 /* Link styling */
-.service-list a, .experience-list a {
-    font-size: 0.9em;
+.card-content a {
     color: #1a0dab;
     text-decoration: none;
 }
 
-.service-list a:hover, .experience-list a:hover {
+.card-content a:hover {
     text-decoration: underline;
 }
 
+.card-content strong {
+    font-weight: bold;
+}
 /* Strong element styling */
 .service-list strong, .experience-list strong {
     display: block;
