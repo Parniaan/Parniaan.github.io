@@ -116,14 +116,6 @@ body {
     margin: 5px 0;
 }
 
-/* Section title styling */
-/* Section title styling */
-.section-title {
-    font-size: 1.5em;
-    color: #333;
-    margin-bottom: 10px;
-    font-weight: bold;
-}
 
 /* Card layout for each section */
 .card {
@@ -196,11 +188,11 @@ body {
     color: #333;
 }
 
-/* General alignment for all sections */
+/* General styling for all sections */
 .section {
-    max-width: 800px; /* Set a max-width to match the Publications section */
+    max-width: 800px; /* Aligns with the Publications section width */
     margin: 20px auto; /* Center the section within the page */
-    text-align: left; /* Align text to the left */
+    text-align: left; /* Aligns text within the section to the left */
 }
 
 /* Section title styling */
@@ -211,7 +203,7 @@ body {
     font-weight: bold;
 }
 
-/* Remove card styling for Academic Services and Volunteer Experience */
+/* Styling for Academic Services and Volunteer Experience lists */
 .service-list, .experience-list {
     list-style-type: none; /* Remove default bullets */
     padding: 0;
