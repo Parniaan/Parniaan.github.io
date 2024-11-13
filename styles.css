@@ -1,3 +1,9 @@
+/* Define custom colors */
+:root {
+    --light-sage: #B2C2A1;
+    --dark-sage: #536856;
+}
+
 /* Centered main container for profile layout */
 .profile-container {
     display: flex;
@@ -49,9 +55,9 @@
 }
 
 .profile-photo {
-    width: 100%;
+    width: 200%;
     height: auto;
-    border-radius: 50%;
+    border-radius: 10%;
     object-fit: cover;
 }
 
@@ -188,11 +194,12 @@ body {
     color: #333;
 }
 
-/* General styling for all sections */
+/* General alignment for each section */
 .section {
-    max-width: 800px; /* Aligns with the Publications section width */
-    margin: 20px auto; /* Center the section within the page */
-    text-align: left; /* Aligns text within the section to the left */
+    max-width: 800px; /* Align width with Publications section */
+    margin: 20px auto; /* Center the section on the page */
+    text-align: left; /* Left-align all text */
+    padding: 0; /* Remove extra padding */
 }
 
 /* Section title styling */
@@ -206,37 +213,39 @@ body {
 /* Styling for Academic Services and Volunteer Experience lists */
 .service-list, .experience-list {
     list-style-type: none; /* Remove default bullets */
-    padding: 0;
-    margin: 0;
+    padding-left: 0; /* Remove padding to align with the left edge */
+    margin-top: 0; /* Remove extra top margin */
 }
 
 /* Styling for each item in Academic Services and Volunteer Experience */
 .service-list li, .experience-list li {
     font-size: 1em;
-    margin-bottom: 10px;
+    margin-bottom: 8px; /* Reduced margin for better spacing */
     color: #444;
 }
 
 /* Custom bullet styling */
 .service-list li::before, .experience-list li::before {
     content: "•"; /* Custom bullet symbol */
-    color: #4A90E2; /* Custom bullet color */
+    color: var(--dark-sage); /* Custom bullet color */
     font-size: 1.2em;
     margin-right: 8px;
     vertical-align: middle;
 }
 
-/* Link styling */
+/* Inline link styling for conference title */
 .service-list a, .experience-list a {
-    color: #1a0dab;
+    color: var(--dark-sage);
     text-decoration: none;
 }
 
 .service-list a:hover, .experience-list a:hover {
     text-decoration: underline;
+    color: var(--light-sage);
 }
 
-/* Bold title styling for list items */
+/* Bold styling for titles within list items */
 .service-list strong, .experience-list strong {
     font-weight: bold;
+    margin-right: 5px; /* Space between title and conference name */
 }
