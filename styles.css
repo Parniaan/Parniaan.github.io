@@ -1,61 +1,42 @@
-/* Container for Bio and Profile Image */
-.top-container {
+/* Centered main container for profile layout */
+.profile-container {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    align-items: center; /* Center-aligns items vertically */
+    max-width: 900px;
     width: 100%;
-    max-width: 1200px;
-    margin-top: 20px;
     padding: 20px;
+    margin: 0 auto;
+    text-align: left;
 }
 
-/* Bio banner on the left side with neural network pattern background */
-.bio-banner {
-    background-color: #b2b8a3;
-    background-image: url('img/neural-network-pattern.png'); /* Replace with your image path */
-    background-size: cover;
-    background-blend-mode: multiply;
-    padding: 20px;
-    border-radius: 8px;
-    width: 60%;
-    color: #fff;
-    text-align: center; /* Center text within the bio banner */
-    color: #333;
-}
-
-/* Name styling */
-.bio-banner h1 {
-    font-size: 2em;
-    margin: 0 0 10px;
-    color: #2f4f4f;
-}
-
-/* Social icons container under name */
-.social-links {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+/* Inline links styling with icons */
+.profile-links {
     margin-top: 10px;
 }
 
-/* Social icon styling */
-.social-icon {
-    width: 20px;
-    height: 20px;
-    transition: transform 0.3s;
+.profile-links a {
+    font-size: 0.9em;
+    color: #1a0dab;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
 }
 
-.social-icon:hover {
-    transform: scale(1.1);
+.profile-links a i {
+    margin-right: 5px; /* Adds spacing between icon and text */
+    color: #1a0dab;
 }
 
-/* Profile photo on the top right */
-.profile-photo-container {
+.profile-links a:hover {
+    text-decoration: underline;
+}
+
+/* Profile image styling */
+.profile-image-container {
+    margin-left: 20px;
     width: 150px;
     height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .profile-photo {
@@ -63,6 +44,27 @@
     height: auto;
     border-radius: 50%;
     object-fit: cover;
+}
+
+/* Research section styling */
+.research-section {
+    max-width: 900px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 0 20px;
+    text-align: left;
+}
+
+.research-section h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.research-section p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555;
 }
 
 /* General body styling */
