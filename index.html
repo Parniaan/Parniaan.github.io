@@ -2,18 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="Parnian Kamran" content="width=device-width, initial-scale=1.0">
+    <meta name="Parnian Shabani Kamran" content="width=device-width, initial-scale=1.0">
     <title>Parnian Shabani Kamran</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <!-- Name Header -->
+         <!-- Centered Content -->
     <header>
+        <img src="img/pers.jpeg" alt="Your Photo" class="profile-photo">
         <h1>Parnian Shabani Kamran</h1>
+        <p id="greeting"></p> <!-- Placeholder for greeting -->
+
+        <!-- Social Media Links -->
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/parnian-kamran/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Linkedin_icon.svg" alt="LinkedIn" class="social-icon">
+            </a> |
+            <a href="https://github.com/parniaan" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" class="social-icon">
+            </a> |
+            <a href="https://x.com/parnian_kamran?s=21&t=XhFKWNd_ANjw2e2xDMUuJA" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/800px-Twitter-logo.svg.png" alt="Twitter" class="social-icon">
+            </a>
+        </div>
     </header>
-    <p>Welcome to my academic profile! Here, you can find information about my background, research interests, and experience.</p>
-    
+
     <!-- Bio Section -->
     <div class="section">
         <h2 class="section-title">Bio</h2>
@@ -27,44 +42,69 @@
 
     </div>
 
-    <!-- Papers Section -->
+    <!-- Publications Section Using Flexbox -->
     <div class="section">
         <h2 class="section-title">Publications</h2>
-        <ul>
-            <li class="paper-item">
-                <strong><a href="https://dl.acm.org/doi/10.1145/3691621.3694932">Vision Paper: Proof-Carrying Code Completions</a></strong><br>
-                Author(s): Parnian Kamran, Premkumar Devanbu, and Caleb Stanford<br>
-                <em>ASYDE workshop co-located with ASE, 2024</em>
-            </li>
-            <li class="paper-item">
-                <strong><a href="https://ieeexplore.ieee.org/document/10577644">On the Performance of Malware Detection Classifiers Using Hardware Performance Counters</a></strong><br>
-                Author(s): Alireza Abolhasani Zeraatkar, Parnian Shabani Kamran, Inderpreet Kaur, Nagabindu Ramu, Tyler Sheaves, Hussain Al-Asaad<br>
-                <em>International Conference on Smart Applications, Communications and Networking (SmartNets), 2024</em>
-            </li>
-            <li class="paper-item">
-                <strong><a href="https://ieeexplore.ieee.org/document/10577644">Advancements in Secure Computing: Exploring Automated Repair Debugging and Verification Techniques for Hardware Design</a></strong><br>
-                Author(s): Alireza Abolhasani Zeraatkar, Parnian Shabani Kamran, Hussain Al-Asaad<br>
-                <em>IEEE 14th Annual Computing and Communication Workshop and Conference (CCWC), 2024</em>
-            </li>
-            <!-- Add more papers as needed -->
-        </ul>
+        <div class="publication-card">
+            <img src="img/PCCC-workflow" alt="Paper 1 Image" class="pub-image">
+            <div class="pub-details">
+                <p><strong><a href="https://dl.acm.org/doi/10.1145/3691621.3694932">Vision Paper: Proof-Carrying Code Completions</a></strong></p>
+                <p><em>Parnian Kamran</em>, <a href="https://www.cs.ucdavis.edu/~devanbu/">Premkumar Devanbu</a>, and <a href="https://web.cs.ucdavis.edu/~cdstanford/">Caleb Stanford</a></p>
+                <p>ASYDE workshop co-located with ASE, 2024</p>
+            </div>
+        </div>
+        <div class="publication-card">
+            <img src="img/smartnets2024.png" alt="Paper 2 Image" class="pub-image">
+            <div class="pub-details">
+                <p><strong><a href="https://ieeexplore.ieee.org/document/10577644">On the Performance of Malware Detection Classifiers Using Hardware Performance Counters</a></strong></p>
+                <p><a href="https://www.linkedin.com/in/alireza-abolhasani">Alireza Abolhasani Zeraatkar</a>,<em>Parnian Shabani Kamran</em>, Inderpreet Kaur, Nagabindu Ramu, Tyler Sheaves, <a href="https://faculty.engineering.ucdavis.edu/al-asaad/"></a>Hussain Al-Asaad</a></p>
+                <p>International Conference on Smart Applications, Communications and Networking (SmartNets), 2024</p>
+            </div>
+        </div>
+
+            <div class="publication-card">
+            <img src="img/ccwc2024.png" alt="Paper 2 Image" class="pub-image">
+            <div class="pub-details">
+                <p> <strong><a href="https://ieeexplore.ieee.org/document/10427806">Advancements in Secure Computing: Exploring Automated Repair Debugging and Verification Techniques for Hardware Design</a></strong>
+                <p><a href="https://www.linkedin.com/in/alireza-abolhasani">Alireza Abolhasani Zeraatkar</a>,<em>Parnian Shabani Kamran</em>, <a href="https://faculty.engineering.ucdavis.edu/al-asaad/"></a>Hussain Al-Asaad</a></p>
+                <p>IEEE 14th Annual Computing and Communication Workshop and Conference (CCWC), 2024</p>
+            </div>
+        </div>
     </div>
 
-    <!-- Volunteer Section -->
+    <!-- Academic Services Section Using Flexbox -->
     <div class="section">
         <h2 class="section-title">Academic Services</h2>
-        <ul>
-            <li class="volunteer-item">
-                <strong>Session chair</strong><br>
-                ASE, 2024<br>
-            </li>
-            <li class="volunteer-item">
-                <strong>Student volunteer</strong><br>
-                ASE, 2024<br>
-            </li>
-            <!-- Add more volunteer experiences as needed -->
-        </ul>
+        <div class="experience-card">
+            <p><strong>Session chair</strong></p>
+            <p><a href="https://conf.researchr.org/track/ase-2024/ase-2024-research?">ASE 2024</a></p>
+            <!-- <p>Oct 2024</p> -->
+        </div>
+        <!-- <div class="experience-card">
+            <p><strong>Volunteer Position 2</strong></p>
+            <p>Organization Name</p>
+            <p>Start Date - End Date</p>
+            <p>Brief description of responsibilities and contributions.</p>
+        </div> -->
+
     </div>
+
+    <div class="section">
+        <h2 class="section-title">Volunteer Experience</h2>
+        <div class="experience-card">
+            <p><strong>Sudent volunteer</strong></p>
+            <p><a href="https://conf.researchr.org/home/ase-2024">ASE 2024</a></p>
+            <!-- <p>Oct 2024</p> -->
+        </div>
+        <!-- <div class="experience-card">
+            <p><strong>Volunteer Position 2</strong></p>
+            <p>Organization Name</p>
+            <p>Start Date - End Date</p>
+            <p>Brief description of responsibilities and contributions.</p>
+        </div> -->
+
+    </div>
+
 
 </body>
 </html>
