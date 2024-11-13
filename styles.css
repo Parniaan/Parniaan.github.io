@@ -2,7 +2,7 @@
 .top-container {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center; /* Center-aligns items vertically */
     width: 100%;
     max-width: 1200px;
     margin-top: 20px;
@@ -19,21 +19,23 @@
     border-radius: 8px;
     width: 60%;
     color: #fff;
-    text-align: left;
+    text-align: center; /* Center text within the bio banner */
+    color: #333;
 }
 
 /* Name styling */
 .bio-banner h1 {
     font-size: 2em;
-    margin-bottom: 10px;
-    color: #0056b3;
+    margin: 0 0 10px;
+    color: #2f4f4f;
 }
 
 /* Social icons container under name */
 .social-links {
     display: flex;
+    justify-content: center;
     gap: 10px;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 /* Social icon styling */
@@ -51,12 +53,16 @@
 .profile-photo-container {
     width: 150px;
     height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .profile-photo {
     width: 100%;
     height: auto;
     border-radius: 50%;
+    object-fit: cover;
 }
 
 /* General body styling */
