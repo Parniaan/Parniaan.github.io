@@ -106,3 +106,54 @@ body {
 .pub-details p {
     margin: 5px 0;
 }
+
+/* Section title styling */
+.section-title {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* General list styling for services and experience */
+.service-list, .experience-list {
+    list-style-type: none; /* Remove default bullets */
+    padding: 0;
+    margin: 0;
+}
+
+/* List item styling */
+.service-list li, .experience-list li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    font-size: 1em;
+    color: #444;
+}
+
+/* Custom bullet styling */
+.service-list li::before, .experience-list li::before {
+    content: "•"; /* Custom bullet symbol */
+    color: #4A90E2; /* Custom bullet color */
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Link styling */
+.service-list a, .experience-list a {
+    font-size: 0.9em;
+    color: #1a0dab;
+    text-decoration: none;
+}
+
+.service-list a:hover, .experience-list a:hover {
+    text-decoration: underline;
+}
+
+/* Strong element styling */
+.service-list strong, .experience-list strong {
+    display: block;
+    font-weight: bold;
+    color: #333;
+}
