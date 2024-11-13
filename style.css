@@ -1,42 +1,45 @@
-/* Center content on the page */
-body {
+/* Container for Bio and Profile Image */
+.top-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #b2b8a3; /* Sage color */
-    text-align: center;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+    padding: 20px;
 }
 
-/* Profile photo styling */
-.profile-photo {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-bottom: 15px;
+/* Bio banner on the left side with neural network pattern background */
+.bio-banner {
+    background-color: #b2b8a3;
+    background-image: url('img/neural-network-pattern.png'); /* Replace with your image path */
+    background-size: cover;
+    background-blend-mode: multiply;
+    padding: 20px;
+    border-radius: 8px;
+    width: 60%;
+    color: #fff;
+    text-align: left;
 }
 
 /* Name styling */
-header h1 {
-    font-size: 2.5em;
+.bio-banner h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
     color: #0056b3;
-    margin: 0;
 }
 
-/* Social icons styling */
-.social-links a {
-    margin: 0 10px;
+/* Social icons container under name */
+.social-links {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
 }
 
 /* Social icon styling */
 .social-icon {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     transition: transform 0.3s;
 }
 
@@ -44,28 +47,33 @@ header h1 {
     transform: scale(1.1);
 }
 
-/* Sage-colored banner with neural network pattern */
-.bio-banner {
-    background-color: #b2b8a3;
-    background-image: url('neural-network-pattern.png'); /* Replace with your image path */
-    background-size: cover;
-    background-blend-mode: multiply;
-    padding: 30px;
-    border-radius: 8px;
+/* Profile photo on the top right */
+.profile-photo-container {
+    width: 150px;
+    height: 150px;
+}
+
+.profile-photo {
     width: 100%;
-    max-width: 800px;
-    margin-top: 20px;
-    text-align: left;
-    color: #fff;
+    height: auto;
+    border-radius: 50%;
 }
 
-.bio-banner p {
+/* General body styling */
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     margin: 0;
-    font-size: 1.1em;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
 }
 
-/* Flexbox styling for publication and experience cards */
-.publication-card, .experience-card {
+/* Flexbox styling for publication cards */
+.publication-card {
     display: flex;
     align-items: flex-start;
     padding: 15px;
@@ -74,10 +82,8 @@ header h1 {
     margin-bottom: 15px;
     background-color: #fff;
     text-align: left;
-}
-
-.publication-card {
-    max-width: 600px;
+    max-width: 800px;
+    width: 100%;
 }
 
 .pub-image {
@@ -89,19 +95,4 @@ header h1 {
 
 .pub-details p {
     margin: 5px 0;
-}
-
-/* Experience card styling */
-.experience-card {
-    flex-direction: column;
-    max-width: 600px;
-}
-
-.experience-card p {
-    margin: 5px 0;
-}
-
-.section-title {
-    text-align: left;
-    color: #333;
 }
