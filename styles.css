@@ -195,3 +195,56 @@ body {
     font-weight: bold;
     color: #333;
 }
+
+/* General alignment for all sections */
+.section {
+    max-width: 800px; /* Set a max-width to match the Publications section */
+    margin: 20px auto; /* Center the section within the page */
+    text-align: left; /* Align text to the left */
+}
+
+/* Section title styling */
+.section-title {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Remove card styling for Academic Services and Volunteer Experience */
+.service-list, .experience-list {
+    list-style-type: none; /* Remove default bullets */
+    padding: 0;
+    margin: 0;
+}
+
+/* Styling for each item in Academic Services and Volunteer Experience */
+.service-list li, .experience-list li {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+/* Custom bullet styling */
+.service-list li::before, .experience-list li::before {
+    content: "•"; /* Custom bullet symbol */
+    color: #4A90E2; /* Custom bullet color */
+    font-size: 1.2em;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+/* Link styling */
+.service-list a, .experience-list a {
+    color: #1a0dab;
+    text-decoration: none;
+}
+
+.service-list a:hover, .experience-list a:hover {
+    text-decoration: underline;
+}
+
+/* Bold title styling for list items */
+.service-list strong, .experience-list strong {
+    font-weight: bold;
+}
