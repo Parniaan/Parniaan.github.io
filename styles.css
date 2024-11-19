@@ -28,11 +28,11 @@
 }
 
 .profile-text a:hover {
-    color: var(--terracotta)
+    color: var(--golden-Sand)
 }
 
 .profile-text a:visited {
-    color: var(--golden-Sand)
+    color: var(--terracotta)
 }
 
 
@@ -152,11 +152,11 @@ body {
 
 .pub-details a:hover {
     text-decoration: underline;
-    color: var(--terracotta);
+    color: var(--golden-Sand);
 }
 
 .pub-details a:visited {
-    color: var(--golden-Sand);
+    color: var(--terracotta);
 }
 
 
@@ -211,11 +211,11 @@ body {
 
 .service-list a:hover, .experience-list a:hover {
     text-decoration: underline;
-    color: var(--terracotta)
+    color: var(--golden-Sand)
 }
 
 .service-list a:visited, .experience-list a:visited {
-    color: var(--golden-Sand);
+    color: var(--terracotta);
 }
 
 
