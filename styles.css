@@ -25,10 +25,6 @@
 
 .profile-container a {
     color: var(--dark-sage);
-} :hover {
-    color:var(--terracotta);
-} :active {
-    color: var(--golden-Sand)
 }
 
 /* Inline links styling with icons */
