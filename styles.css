@@ -137,11 +137,12 @@ body {
     text-decoration: none;
 }
 
-.card-content a:hover {
+.pub-details a:hover {
     text-decoration: underline;
+    color: var(--golden-Sand)
 }
 
-.card-content strong {
+.pub-details strong {
     font-weight: bold;
 }
 /* Strong element styling */
@@ -170,15 +171,16 @@ body {
 
 /* Styling for Academic Services and Volunteer Experience lists */
 .service-list, .experience-list {
-    list-style-type: none; /* Remove default bullets */
-    padding-left: 0; /* Remove padding to align with the left edge */
-    margin-top: 0; /* Remove extra top margin */
+    list-style-type: disc; /* Default bullet points */
+    padding-left: 20px; /* Add consistent padding for the bullets */
+    margin: 0;
 }
 
 /* Styling for each item in Academic Services and Volunteer Experience */
 .service-list li, .experience-list li {
     font-size: 1em;
-    margin-bottom: 8px; /* Reduced margin for better spacing */
+    line-height: 1.6; /* Ensure consistent spacing between lines */
+    margin-bottom: 8px; /* Space between each list item */
     color: #444;
 }
 
@@ -206,3 +208,11 @@ body {
     font-weight: bold;
     margin-right: 5px; /* Space between title and conference name */
 }
+
+/* Fix bullet alignment */
+.service-list li::marker, .experience-list li::marker {
+    color: #536856; /* Dark sage for bullet color */
+    font-size: 1em; /* Match bullet size to text */
+    vertical-align: middle; /* Align bullet with text */
+}
+
