@@ -103,14 +103,6 @@ body {
     background-color: var(--ivory);
 }
 
-a {
-    color: var(--dark-sage)
-} :active {
-    color: var(--golden-Sand)
-} :hover {
-    color: var(--light-sage)
-}
-
 /* Flexbox styling for publication cards */
 .publication-card {
     display: flex;
