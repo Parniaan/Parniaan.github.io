@@ -184,15 +184,6 @@ body {
     color: #444;
 }
 
-/* Custom bullet styling */
-.service-list li::before, .experience-list li::before {
-    content: "•"; /* Custom bullet symbol */
-    color: var(--dark-sage); /* Custom bullet color */
-    font-size: 1.2em;
-    margin-right: 8px;
-    vertical-align: middle;
-}
-
 /* Inline link styling for conference title */
 .service-list a, .experience-list a {
     color: var(--dark-sage);
