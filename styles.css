@@ -23,6 +23,14 @@
     text-align: left;
 }
 
+.profile-container a {
+    color: var(--dark-sage);
+} :hover {
+    color:var(--terracotta);
+} :active {
+    color: var(--golden-Sand)
+}
+
 /* Inline links styling with icons */
 /* Inline links styling with icons */
 .profile-links {
@@ -36,7 +44,7 @@
     display: inline-flex;
     align-items: center;
     margin-right: 5px; /* Adds spacing between each link */
-}
+} 
 
 .profile-links a:last-child {
     margin-right: 0; /* Remove the margin after the last link */
@@ -57,13 +65,13 @@
 /* Profile image styling */
 .profile-image-container {
     margin-left: 20px;
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
 }
 
 .profile-photo {
-    width: 200%;
-    height: auto;
+    width: auto;
+    height: 100%;
     border-radius: 10%;
     object-fit: cover;
 }
@@ -135,12 +143,18 @@ body {
 .publication-card a {
     color: var(--dark-sage);
     text-decoration: none;
-}
+} 
 
 .pub-details a:hover {
     text-decoration: underline;
-    color: var(--golden-Sand)
+    color: var(--terracotta)
 }
+
+.pub-details a:active {
+    color: var(--golden-Sand);
+}
+
+
 
 .pub-details strong {
     font-weight: bold;
@@ -192,7 +206,13 @@ body {
 
 .service-list a:hover, .experience-list a:hover {
     text-decoration: underline;
+    color: var(--terracotta);
 }
+
+.service-list a:hover, .experience-list a:hover {
+    color: var(--golden-Sand);
+}
+
 
 /* Bold styling for titles within list items */
 .service-list strong, .experience-list strong {
