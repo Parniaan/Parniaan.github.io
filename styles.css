@@ -52,7 +52,6 @@
 
 .profile-links a:hover {
     text-decoration: underline;
-    color: var(--light-sage);
 }
 
 /* Profile image styling */
@@ -200,7 +199,6 @@ body {
 
 .service-list a:hover, .experience-list a:hover {
     text-decoration: underline;
-    color: var(--light-sage);
 }
 
 /* Bold styling for titles within list items */
