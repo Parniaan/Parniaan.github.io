@@ -143,7 +143,6 @@ body {
 
 .pub-details a:hover {
     text-decoration: underline;
-    color: var(--terracotta)
 }
 
 .pub-details a:active {
@@ -205,7 +204,7 @@ body {
     color: var(--terracotta);
 }
 
-.service-list a:hover, .experience-list a:hover {
+.service-list a:active, .experience-list a:active {
     color: var(--golden-Sand);
 }
 
