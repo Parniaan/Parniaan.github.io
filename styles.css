@@ -201,7 +201,6 @@ body {
 
 .service-list a:hover, .experience-list a:hover {
     text-decoration: underline;
-    color: var(--terracotta);
 }
 
 .service-list a:active, .experience-list a:active {
