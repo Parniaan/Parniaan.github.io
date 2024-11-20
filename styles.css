@@ -232,3 +232,35 @@ body {
     vertical-align: middle; /* Align bullet with text */
 }
 
+/* Teaching experience list styling */
+.teaching-list {
+    list-style-type: disc; /* Default bullet points */
+    padding-left: 20px;
+    margin: 0;
+}
+
+/* Individual teaching item */
+.teaching-list li {
+    font-size: 1em;
+    line-height: 1.8;
+    color: #444; /* Neutral text color */
+    margin-bottom: 15px;
+}
+
+/* Styling for dates */
+.teaching-dates {
+    color: #536856; /* Dark sage */
+    font-weight: bold;
+}
+
+/* Styling for role */
+.teaching-role {
+    color: #444; /* Neutral gray */
+    font-weight: bold;
+}
+
+/* Styling for description */
+.teaching-description {
+    color: #536856; /* Dark sage for subtlety */
+    font-style: italic; /* Add differentiation for descriptions */
+}
