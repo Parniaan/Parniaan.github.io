@@ -56,7 +56,7 @@
 }
 
 .profile-links a i, .profile-links a img {
-    width: 15px;
+    width: 100%;
     height: 15px;
     margin-right: 5px; /* Adds spacing between icon and text */
     vertical-align: middle;
@@ -329,5 +329,13 @@ body {
 
     .publication-content {
         text-align: center; /* Center-align text */
+    }
+
+    .profile-container {
+       flex-direction: column;
+    }
+
+    .profile-links a {
+        font-size: 5em;
     }
 }
