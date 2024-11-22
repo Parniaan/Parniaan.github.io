@@ -225,6 +225,7 @@ body {
 /* Publication card container */
 .publication-card {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     background-color: #fff; /* White card background */
     border-radius: 8px;
@@ -241,6 +242,7 @@ body {
 
 /* Image container */
 .publication-image-container {
+    flex: 25%;
     flex-shrink: 0; /* Prevent shrinking of the image container */
     display: flex; /* Center the image within the container */
     justify-content: center;
@@ -263,7 +265,7 @@ body {
     flex-direction: column;
     flex: 1; /* Take up remaining space */
     line-height: 0.2;
-    flex: 0.75%;
+    flex: 75%;
 }
 
 /* Title */
@@ -310,13 +312,13 @@ body {
 /* Responsive adjustments for mobile */
 @media (max-width: 768px) {
     .publication-card {
-        flex-wrap: wrap; /* Enable wrapping on smaller screens */
         flex-direction: column; /* Stack content vertically */
         align-items: center; /* Center-align content */
         text-align: center; /* Center-align text */
     }
 
     .publication-image-container {
+        flex: 100%;
         margin-right: 0; /* Remove right margin for stacked layout */
         margin-bottom: 10px; /* Add space below image */
         width: 100%; /* Make the image container span full width */
@@ -328,6 +330,7 @@ body {
     }
 
     .publication-content {
+        flex: 100%;
         text-align: center; /* Center-align text */
     }
 
