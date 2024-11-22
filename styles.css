@@ -115,55 +115,7 @@ body {
     background-color: #f9f9f9;
 }
 
-/* Flexbox styling for publication cards */
-/* .publication-card {
-    display: flex;
-    align-items: flex-start;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    margin-bottom: 15px;
-    background-color: #fff;
-    text-align: left;
-    max-width: 800px;
-    width: 100%;
-} */
 
-/* Publication image styling */
-.pub-image {
-    width: 100px;
-    height: auto;
-    margin-right: 15px;
-    border-radius: 4px;
-    margin-block: auto;
-}
-
-/* Publication details styling */
-.pub-details p {
-    margin: 5px 0;
-}
-
-
-/* Link styling */
-.publication-card a {
-    color: var(--dark-sage);
-    text-decoration: none;
-} 
-
-.pub-details a:hover {
-    text-decoration: underline;
-    color: var(--golden-Sand);
-}
-
-.pub-details a:visited {
-    color: var(--terracotta);
-}
-
-
-
-.pub-details strong {
-    font-weight: bold;
-}
 /* Strong element styling */
 .service-list strong, .experience-list strong {
     display: block;
@@ -273,7 +225,7 @@ body {
 /* Publication card container */
 .publication-card {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     background-color: #fff; /* White card background */
     border-radius: 8px;
     padding: 0.7rem;
@@ -334,7 +286,7 @@ body {
 /* Conference details */
 .publication-conference {
     font-size: 0.9em;
-    color: #1a0dab; /* Default link color */
+    color: #444; /* Default link color */
     line-height: 1.3; /* Reduced line height */
 }
 
@@ -348,6 +300,7 @@ a:hover {
 a:visited {
     color: var(--terracotta); /* Terracotta color for visited links */
 }
+
 
 /* Responsive adjustments for mobile */
 @media (max-width: 768px) {
