@@ -311,8 +311,6 @@ body {
 /* Responsive adjustments for mobile */
 @media (max-width: 768px) {
     .publication-card {
-        display: -webkit-box; /* For older versions of Chromium */
-        display: -ms-flexbox; /* For IE10+ */
         font-size: 1.2rem;
         flex-wrap: wrap;
         flex-direction: column; /* Stack content vertically */
