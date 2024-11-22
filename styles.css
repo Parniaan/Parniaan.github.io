@@ -225,7 +225,6 @@ body {
 /* Publication card container */
 .publication-card {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     background-color: #fff; /* White card background */
     border-radius: 8px;
@@ -312,6 +311,8 @@ body {
 /* Responsive adjustments for mobile */
 @media (max-width: 768px) {
     .publication-card {
+        font-size: 1.2rem;
+        flex-wrap: wrap;
         flex-direction: column; /* Stack content vertically */
         align-items: center; /* Center-align content */
         text-align: center; /* Center-align text */
