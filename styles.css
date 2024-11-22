@@ -182,7 +182,7 @@ body {
 
 /* Section title styling */
 .section-title {
-    font-size: 1.5em;
+    font-size: 1.8em;
     color: #333;
     margin-bottom: 10px;
     font-weight: bold;
@@ -263,4 +263,81 @@ body {
 .teaching-description {
     color: #536856; /* Dark sage for subtlety */
     font-style: italic; /* Add differentiation for descriptions */
+}
+
+
+
+/* Flex container for papers */
+.paper-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    gap: 20px; /* Space between items */
+}
+
+/* Individual paper item */
+.paper-item {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%; /* Default width for mobile */
+    max-width: 360px; /* Limit the width of each item for larger screens */
+    background-color: #F8F5EC; /* Ivory background */
+    border: 1px solid #DDE3D0; /* Light sage border */
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Paper image styling */
+.paper-image {
+    width: 80px; /* Thumbnail width */
+    height: 80px; /* Thumbnail height */
+    margin-right: 15px;
+    border-radius: 4px; /* Slightly rounded corners */
+}
+
+/* Paper details */
+.paper-details {
+    flex: 1;
+}
+
+/* Paper title styling */
+.paper-title {
+    font-size: 1em;
+    color: var(--dark-sage); /* Dark sage */
+    margin-bottom: 5px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+/* Paper authors styling */
+.paper-authors {
+    font-size: 0.9em;
+    color: #444; /* Neutral text color */
+}
+
+/* Conference name styling */
+.paper-conference {
+    font-size: 0.9em;
+    color: #444; /* Blue for clickable items */
+}
+
+/* Hover effect for paper items */
+.paper-item:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .paper-item {
+        flex-direction: column; /* Stack image and text vertically */
+        align-items: center; /* Center-align content */
+    }
+
+    .paper-image {
+        margin: 0 0 10px 0; /* Add spacing below the image */
+    }
+
+    .paper-details {
+        text-align: center; /* Center-align text for mobile */
+    }
 }
