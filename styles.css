@@ -293,7 +293,7 @@ body {
     display: flex; /* Center the image within the container */
     justify-content: center;
     align-items: center;
-    width: 120px; /* Fixed width for the container */
+    width: 130px; /* Fixed width for the container */
     height: auto;
     margin-right: 15px; /* Space between image and content */
 }
@@ -310,6 +310,7 @@ body {
     display: flex;
     flex-direction: column;
     flex: 1; /* Take up remaining space */
+    line-height: 0.2;
 }
 
 /* Title */
