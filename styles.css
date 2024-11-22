@@ -290,14 +290,19 @@ body {
     line-height: 1.3; /* Reduced line height */
 }
 
+.publication-card a {
+    text-decoration: none;
+    color: var(--dark-sage)
+}
+
 /* Link hover effect */
-a:hover {
+.publication-card a:hover {
     text-decoration: underline;
     color: var(--golden-Sand); /* Golden Sand color on hover */
 }
 
 /* Visited link styling */
-a:visited {
+.publication-card a:visited {
     color: var(--terracotta); /* Terracotta color for visited links */
 }
 
