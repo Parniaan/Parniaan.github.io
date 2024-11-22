@@ -310,25 +310,24 @@ body {
 /* Responsive adjustments for mobile */
 @media (max-width: 768px) {
     .publication-card {
-        -webkit-box-orient: vertical; /* Fallback for older Safari */
-        -webkit-box-direction: normal; /* Fallback for older Safari */
-        -ms-flex-direction: column; /* Fallback for IE10+ */
-        flex-direction: column; /* Modern browsers */
-        align-items: center; /* Center the content */
+        flex-wrap: wrap; /* Enable wrapping on smaller screens */
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Center-align content */
         text-align: center; /* Center-align text */
     }
 
     .publication-image-container {
-        width: 100%; /* Make the image container span the full width */
-        margin-bottom: 15px; /* Add spacing below the image */
+        margin-right: 0; /* Remove right margin for stacked layout */
+        margin-bottom: 10px; /* Add space below image */
+        width: 100%; /* Make the image container span full width */
     }
 
     .publication-image {
-        max-width: 200px; /* Limit image size on smaller screens */
+        max-width: 150px; /* Resize image for smaller screens */
         height: auto;
     }
 
     .publication-content {
-        text-align: center; /* Center-align text for better mobile readability */
+        text-align: center; /* Center-align text */
     }
 }
