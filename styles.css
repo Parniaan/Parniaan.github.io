@@ -43,7 +43,7 @@
 }
 
 .profile-links a {
-    font-size: 0.9em;
+    font-size: 1.5rem;
     color: var(--dark-sage);
     text-decoration: none;
     display: inline-flex;
@@ -340,6 +340,6 @@ body {
     }
 
     .profile-links a {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 }
