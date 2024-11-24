@@ -15,7 +15,7 @@
 
 /* Centered main container for profile layout */
 .profile-container {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: space-between;
     max-width: 90%;
