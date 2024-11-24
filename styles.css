@@ -79,7 +79,7 @@
 /* Profile image styling */
 .profile-image-container {
     display: flex;
-    padding: 20px;
+    padding: 10px;
     flex-direction: column;
     flex: 25%;
 }
