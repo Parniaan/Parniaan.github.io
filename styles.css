@@ -77,9 +77,11 @@
 
 /* Profile image styling */
 .profile-image-container {
+    display: flex;
     margin-left: 20px;
     width: 250px;
     height: 250px;
+    flex-direction: column;
 }
 
 .profile-photo {
