@@ -27,7 +27,7 @@
 }
 
 .profile-text {
-    flex: 60%;
+    flex: 70%;
     padding: 10px;
 }
 
@@ -81,7 +81,7 @@
     display: flex;
     padding: 20px;
     flex-direction: column;
-    flex: 40%;
+    flex: 25%;
 }
 
 .profile-photo {
