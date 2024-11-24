@@ -18,12 +18,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 900px;
+    max-width: 90%;
     width: 100%;
     padding: 20px;
     margin: 0 auto;
     text-align: left;
-    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .profile-text {
@@ -82,6 +82,7 @@
     padding: 10px;
     flex-direction: column;
     flex: 25%;
+    max-width: 25%;
 }
 
 .profile-photo {
@@ -320,8 +321,8 @@ body {
 
 /* Responsive adjustments for mobile */
 @media (max-width: 768px) {
-    .profile-text .profile-image-container {
-        flex: 100%;
+    .profile-container {
+        flex-direction: column;
     }
     .publication-card {
         font-size: 1.2rem;
