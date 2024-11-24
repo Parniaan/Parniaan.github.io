@@ -23,7 +23,7 @@
     padding: 20px;
     margin: 0 auto;
     text-align: left;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .profile-text {
@@ -320,7 +320,7 @@ body {
 /* Responsive adjustments for mobile */
 @media (max-width: 768px) {
     .profile-container {
-        flex-direction: row;
+        flex-direction: column;
     }
     .publication-card {
         font-size: 1.2rem;
