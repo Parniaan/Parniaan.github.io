@@ -11,6 +11,8 @@
     --dusty-blue: #A1B5C2;
 }
 
+
+
 /* Centered main container for profile layout */
 .profile-container {
     display: flex;
@@ -21,6 +23,12 @@
     padding: 20px;
     margin: 0 auto;
     text-align: left;
+    flex-direction: row;
+}
+
+.profile-text {
+    flex: 60%;
+    padding: 10px;
 }
 
 .profile-container a {
@@ -310,6 +318,9 @@ body {
 
 /* Responsive adjustments for mobile */
 @media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+    }
     .publication-card {
         font-size: 1.2rem;
         flex-wrap: wrap;
