@@ -36,6 +36,7 @@
 }
 
 .profile-text a:hover {
+    margin-top: 5px;
     color: var(--golden-Sand)
 }
 
