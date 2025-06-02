@@ -217,6 +217,11 @@ body {
     margin: 0;
 }
 
+.teaching-list span {
+    font-weight: 1em; /* Make the teaching item title bold */
+    color: var(--steel-teal); /* Dark sage color for titles */
+}
+
 /* Individual teaching item */
 .teaching-list li {
     font-size: 1em;
