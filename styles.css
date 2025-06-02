@@ -238,7 +238,7 @@ body {
 
 /* Styling for dates */
 .teaching-dates {
-    color: #536856; /* Dark sage */
+    color: var(--dark-sage); /* Dark sage */
     font-weight: bold;
 }
 
@@ -250,8 +250,15 @@ body {
 
 /* Styling for description */
 .teaching-description {
-    color: #536856; /* Dark sage for subtlety */
+    color: var(--dark-sage); /* Dark sage for subtlety */
     font-style: italic; /* Add differentiation for descriptions */
+}
+
+.teaching-sublist {
+    color: var(--dark-sage);
+    list-style-type: circle; /* Use circle bullets for sub-items */
+    padding-left: 20px; /* Indent sub-items */
+    margin: 0; /* Remove default margin */
 }
 
 
