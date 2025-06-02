@@ -4,10 +4,10 @@
     --sage-green: #B2C2A1;
     --dark-sage: #536856;
     --muted-rose: #C7A8A1;
-    --Slate-blue-gray: #50727B;
-    --Charcoal-indigo: #35374B;
-    --Sage-green-mist: #78A083;
-    --Steel-teal: #344955;
+    --slate-blue-gray: #50727B;
+    --charcoal-indigo: #35374B;
+    --sage-green-mist: #78A083;
+    --steel-teal: #344955;
     --light-gray: #F0F0F0;
     --ivory: #F8F5EC;
     --stone-gray: #A8A9AD;
@@ -36,16 +36,16 @@
 }
 
 .profile-container a {
-    color: var(--Steel-teal);
+    color: var(--steel-teal);
 }
 
 .profile-text a:hover {
     margin-top: 5px;
-    color: var(--Sage-green-mist)
+    color: var(--sage-green-mist)
 }
 
 .profile-text a:visited {
-    color: var(--Charcoal-indigo)
+    color: var(--slate-blue-gray)
 }
 
 .default-text {
@@ -84,6 +84,7 @@
 }
 
 .profile-links a:hover {
+    color: var(--Sage-green-mist);
     text-decoration: underline;
 }
 
@@ -182,17 +183,17 @@ body {
 
 /* Inline link styling for conference title */
 .service-list a, .experience-list a {
-    color: var(--Steel-teal);
+    color: var(--steel-teal);
     text-decoration: none;
 }
 
 .service-list a:hover, .experience-list a:hover {
     text-decoration: underline;
-    color: var(--Sage-green-mist)
+    color: var(--sage-green-mist)
 }
 
 .service-list a:visited, .experience-list a:visited {
-    color: var(--Charcoal-indigo);
+    color: var(--slate-blue-gray);
 }
 
 
@@ -318,18 +319,18 @@ body {
 
 .publication-content a {
     text-decoration: none;
-    color: var(--Steel-teal)
+    color: var(--steel-teal)
 }
 
 /* Link hover effect */
 .publication-content a:hover {
     text-decoration: underline;
-    color: var(--Sage-green-mist); /* Golden Sand color on hover */
+    color: var(--sage-green-mist); /* Golden Sand color on hover */
 }
 
 /* Visited link styling */
 .publication-content a:visited {
-    color: var(--Charcoal-indigo); /* Charcoal-indigo color for visited links */
+    color: var(--slate-blue-gray); /* Charcoal-indigo color for visited links */
 }
 
 
