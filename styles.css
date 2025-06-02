@@ -35,16 +35,16 @@
     padding: 10px;
 }
 
-.profile-container a {
+.profile-container a, .teaching-role a {
     color: var(--steel-teal);
 }
 
-.profile-text a:hover {
+.profile-container a:hover, .teaching-role a:hover {
     margin-top: 5px;
     color: var(--sage-green-mist)
 }
 
-.profile-text a:visited {
+.profile-text a:visited, .teaching-role a:visited {
     color: var(--slate-blue-gray)
 }
 
