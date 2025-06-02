@@ -86,6 +86,9 @@
 .profile-links a:hover {
     color: var(--sage-green-mist);
     text-decoration: underline;
+    i {
+        color: var(--sage-green-mist);
+    }
 }
 
 /* Profile image styling */
