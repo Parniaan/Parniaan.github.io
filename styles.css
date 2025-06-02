@@ -148,7 +148,9 @@ body {
     font-weight: bold;
     color: #333;
 }
-
+.service-list span {
+    color: var(--steel-teal); /* Dark sage color for titles */
+}
 /* General alignment for each section */
 .section {
     max-width: 800px; /* Align width with Publications section */
