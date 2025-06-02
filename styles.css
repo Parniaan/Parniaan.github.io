@@ -3,12 +3,16 @@
     --light-sage: #DDE3D0;
     --sage-green: #B2C2A1;
     --dark-sage: #536856;
-    --golden-Sand: #D1B27C;
     --muted-rose: #C7A8A1;
-    --terracotta: #C4876A;
+    --Slate-blue-gray: #50727B;
+    --Charcoal-indigo: #35374B;
+    --Sage-green-mist: #78A083;
+    --Steel-teal: #344955;
+    --light-gray: #F0F0F0;
     --ivory: #F8F5EC;
     --stone-gray: #A8A9AD;
     --dusty-blue: #A1B5C2;
+    --black: #000;
 }
 
 
@@ -32,16 +36,22 @@
 }
 
 .profile-container a {
-    color: var(--dark-sage);
+    color: var(--Steel-teal);
 }
 
 .profile-text a:hover {
     margin-top: 5px;
-    color: var(--golden-Sand)
+    color: var(--Sage-green-mist)
 }
 
 .profile-text a:visited {
-    color: var(--terracotta)
+    color: var(--Charcoal-indigo)
+}
+
+.default-text {
+    color: var(--black);
+    font-size: 1.2rem;
+    line-height: 1.5;
 }
 
 
@@ -54,7 +64,7 @@
 
 .profile-links a {
     font-size: 1.5rem;
-    color: var(--dark-sage);
+    color: var(--Steel-teal);
     text-decoration: none;
     display: inline-flex;
     align-items: center;
@@ -70,7 +80,7 @@
     height: 15px;
     margin-right: 5px; /* Adds spacing between icon and text */
     vertical-align: middle;
-    color: var(--dark-sage);
+    color: var(--Steel-teal);
 }
 
 .profile-links a:hover {
@@ -172,17 +182,17 @@ body {
 
 /* Inline link styling for conference title */
 .service-list a, .experience-list a {
-    color: var(--dark-sage);
+    color: var(--Steel-teal);
     text-decoration: none;
 }
 
 .service-list a:hover, .experience-list a:hover {
     text-decoration: underline;
-    color: var(--golden-Sand)
+    color: var(--Sage-green-mist)
 }
 
 .service-list a:visited, .experience-list a:visited {
-    color: var(--terracotta);
+    color: var(--Charcoal-indigo);
 }
 
 
@@ -285,7 +295,7 @@ body {
 /* Title */
 .publication-title {
     font-size: 1em;
-    color: var(--dark-sage); /* Dark sage color for title */
+    color: var(--Steel-teal); /* Dark sage color for title */
     margin-bottom: 5px;
     font-weight: bold;
     line-height: 1.3; /* Reduced line height */
@@ -308,18 +318,18 @@ body {
 
 .publication-content a {
     text-decoration: none;
-    color: var(--dark-sage)
+    color: var(--Steel-teal)
 }
 
 /* Link hover effect */
 .publication-content a:hover {
     text-decoration: underline;
-    color: var(--golden-Sand); /* Golden Sand color on hover */
+    color: var(--Sage-green-mist); /* Golden Sand color on hover */
 }
 
 /* Visited link styling */
 .publication-content a:visited {
-    color: var(--terracotta); /* Terracotta color for visited links */
+    color: var(--Charcoal-indigo); /* Charcoal-indigo color for visited links */
 }
 
 
