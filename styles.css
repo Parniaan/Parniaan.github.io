@@ -86,6 +86,7 @@
 .icon:hover {
     color: var(--sage-green-mist);
     text-decoration: underline;
+    margin-top: 1rem;
 }
 
 .icon:visited {
