@@ -69,7 +69,6 @@
     display: inline-flex;
     align-items: center;
     margin-right: 5px; /* Adds spacing between each link */
-    padding: 5px;
 } 
 
 .profile-links a:last-child {
@@ -86,7 +85,7 @@
 
 .icon:hover {
     color: var(--sage-green-mist);
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .icon:visited {
