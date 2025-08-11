@@ -1,5 +1,15 @@
-/* Define custom colors */
+/* Color variables for light mode */
 :root {
+    --bg: #fdf6f0; /* Brighter background for light mode */
+    --text: #222;
+    --section-bg: #fff;
+    --section-title: #2c3e50;
+    --card-bg: #fff;
+    --card-shadow: rgba(0,0,0,0.05);
+    --link: #0077b6;
+    --button-bg: #e0e0e0;
+    --button-text: #222;
+
     --light-sage: #DDE3D0;
     --sage-green: #B2C2A1;
     --dark-sage: #536856;
@@ -17,6 +27,25 @@
 
 
 
+/* Dark mode overrides */
+[data-theme="dark"] {
+    --bg: #181a1b;
+    --text: #e0e0e0;
+    --section-bg: #23272f;
+    --section-title: #e0e0e0;
+    --card-bg: #23272f;
+    --card-shadow: rgba(0,0,0,0.3);
+    --link: #90caf9;
+    --button-bg: #23272f;
+    --button-text: #e0e0e0;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    transition: background 0.3s, color 0.3s;
+}
+
 /* Centered main container for profile layout */
 .profile-container {
     display: inline-flex;
@@ -28,6 +57,10 @@
     margin: 0 auto;
     text-align: left;
     flex-direction: row;
+    background: var(--card-bg);
+    box-shadow: 0 2px 8px var(--card-shadow);
+    border-radius: 12px;
+    transition: background 0.3s, box-shadow 0.3s;
 }
 
 .profile-text {
@@ -162,12 +195,15 @@ body {
     text-align: left; /* Left-align all text */
     padding: 0; /* Remove extra padding */
     width: 100%;
+    background: var(--section-bg);
+    box-shadow: 0 2px 8px var(--card-shadow);
+    border-radius: 12px;
 }
 
 /* Section title styling */
 .section-title {
     font-size: 1.8em;
-    color: #333;
+    color: var(--section-title);
     margin-bottom: 10px;
     font-weight: bold;
 }
