@@ -174,8 +174,10 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #f9f9f9;
+    /* Use theme-aware variables so the whole page responds to data-theme */
+    color: var(--text);
+    background: var(--bg);
+    transition: background 0.3s, color 0.3s;
 }
 
 
@@ -306,12 +308,12 @@ body {
 .publication-card {
     display: flex;
     align-items: center;
-    background-color: #fff; /* White card background */
+    background-color: var(--card-bg); /* Theme-aware card background */
     border-radius: 8px;
     padding: 0.7rem;
     margin-bottom: 0.6rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.2s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out, background 0.3s;
 }
 
 .welcome-text {
@@ -355,7 +357,7 @@ body {
 /* Title */
 .publication-title {
     font-size: 1em;
-    color: var(--Steel-teal); /* Dark sage color for title */
+    color: var(--steel-teal); /* Dark sage color for title */
     margin-bottom: 5px;
     font-weight: bold;
     line-height: 1.3; /* Reduced line height */
